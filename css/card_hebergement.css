@@ -1,0 +1,278 @@
+/*elements principaux*/
+*
+{
+
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding:0;
+    color:inherit;
+    text-decoration: none;
+    
+    
+}
+/*fin SECTION 2 filtres*/
+
+/* HEBERGEMENTS POPULAIRE*/
+
+/*element commun container HEBERGEMENTS POPULAIRE*/
+main
+{
+    display: flex;
+}
+
+/*elements container HEBERGEMENTS*/  
+
+.Container_hebergements {
+    background-color: #F2F2F2;
+    width: 59%;
+    margin-right: 3%;
+    border-radius: 20px;
+    
+}
+.Container_hebergements h2 {
+    padding-top: 2%;
+    
+}
+
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+/*elements card HEBERGEMENTS*/  
+.card {
+    background-color: #fff;
+    width: 30%;
+    -webkit-box-shadow: 1px 3px 15px 3px #000000; 
+    box-shadow: 1px 3px 15px 3px #000000;
+    border-radius: 20px;
+    margin-top: 4%;
+    
+}
+/*CONTENT card HEBERGEMENTS*/  
+
+
+.content_cards {
+    padding: 0 0 6% 2%;
+    width: 100%;
+    color: #000000;
+    
+}
+
+.content_cards p, .content_cards h3 {
+    margin: 2% 0 2% 0;
+}
+
+.afficher_plus
+{
+
+    padding-top: 5%;
+}   
+/*LIENS card HEBERGEMENTS*/ 
+
+a.cartes_hebergements
+{
+    text-decoration:none;
+
+}
+
+.card:hover
+{
+    filter: brightness(2);
+}
+
+/*Titres et textes HEBERGEMENT*/
+section h2 {
+    font-size: 20px;
+}
+
+div h3 {
+    font-size: 88%;
+}
+
+h3 p {
+    font-size: 80%;
+}
+
+
+/*IMG card HEBERGEMENTS*/  
+
+.card_image img {
+    object-fit: cover;
+    width: 100%;
+    padding: 2% 2% 0% 2%;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+ 
+}
+
+.container_stars
+{
+    color: #0065FC;
+}
+
+/*elements container POPULAIRE*/  
+.Container_card_populaire
+{
+    width: 80%;
+    margin: auto;
+}
+.Container_populaire{
+    background-color: #F2F2F2;
+    width: 30%;
+    padding-bottom:7%;
+    padding: 2%;
+    border-radius: 20px; 
+    
+}
+/*IMG card POPULAIRE*/ 
+.card_image_populaire img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    padding: 3% 3% 3% 3%;
+    border-radius: 20px 0 0 20px;
+    height: 140px;
+ 
+}
+.card_image_populaire{
+    width: 40%;
+    max-width: 40%;
+}
+/*card POPULAIRE*/ 
+.card_populaire{
+    background-color: white;
+    width: 100%;
+    height: 140px;
+    -webkit-box-shadow: 1px 3px 15px 3px #000000; 
+    box-shadow: 1px 3px 15px 3px #000000;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+.card_principal{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+   
+
+}
+/*CONTENT card POPULAIRE*/ 
+.content_cards_populaire
+{
+    width: 50%;
+    margin-left: 5%;
+}
+/*Titres*/
+
+h2 .fa-star{
+    color: inherit;
+    display: block;
+    
+}
+
+.Container_populaire h2
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+
+/*LIENS Populaire*/
+a.cartes_populaires
+{
+    text-decoration: none;
+    color: #000000;
+}
+.container_stars_populaire
+{
+    color: #0065FC;
+}
+a.cartes_populaires:hover
+{
+    filter: brightness(2); 
+}
+
+@media screen and (max-width: 992px)
+{
+   /*cards*/
+   main
+   {
+      flex-direction: column-reverse;
+   }
+   
+   .container_cards
+   { 
+       flex-direction: column;
+       align-items: center; 
+   }
+    
+   /* HEBERGEMENT*/ 
+
+   .Container_hebergements
+   {
+       width: 100%;
+       margin-top: 2%;
+       background-color: white;
+       padding-bottom: 2%;
+   }
+   
+  /* IMG HEBERGEMENT*/ 
+    .card_image img
+    {
+    height: 230px;
+    }
+
+    /* card HEBERGEMENT*/ 
+
+    .card
+    {
+        width: 80%;
+
+    }
+    
+    /* POPULAIRE*/ 
+    .Container_populaire
+    {
+        width: 100%;
+        border-radius: 0;       
+    }
+
+    .container_cards_populaire
+    {
+        width: 80%;
+        margin: auto;
+    }
+    
+    /* POPULAIRE*/ 
+    .card_populaire
+    {
+    height: 200px;
+    }
+    
+    /* IMG POPULAIRE*/ 
+    .card_image_populaire
+    {
+        width: 40%;
+        height: 40%;
+    }
+    .card_image_populaire img
+    {
+        object-fit: fill;
+        padding: none;
+        height: 200px;
+    }
+
+    /* TITRE POPULAIRE*/ 
+    section h2
+    {
+        padding-left: 10%;
+    }
+        
+    .afficher_plus
+    {
+        padding-left: 10%;
+    }  
+}
+

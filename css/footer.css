@@ -1,0 +1,85 @@
+*
+{
+
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding:0;
+    color:inherit;
+    text-decoration: none;
+    
+}
+/*container principal*/
+.Container_footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+
+}
+ /*elements communs*/
+
+.liens_footer
+{
+    font-size: 15px;
+    line-height: 32px;
+
+}
+
+
+ /*A propos*/
+.a_propos
+{
+    border: 3px solid blue;
+    width: 30%;
+}
+/*Nos hébergements*/
+.nos_hebergements
+{
+    border: 3px solid green;
+    width: 25%;
+}
+/*Assistance*/
+.assistance
+{
+    border: 3px solid purple;
+    width: 25%;
+}
+footer h3
+{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px)
+{
+    /*container principal*/
+.Container_footer
+{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*A propos*/
+.a_propos
+{
+    width: 80%;
+}
+
+/*Nos hébergements*/
+.nos_hebergements
+{
+    
+    width: 80%;
+}
+
+/*Assistance*/
+.assistance
+{
+    
+    width: 80%;
+}
+}
