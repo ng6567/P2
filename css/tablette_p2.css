@@ -20,33 +20,40 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+
+
 }
 
-nav img {
-    height: 40px;
-    margin-left: 30px;
+#logo {
+
+    width: 15%;
+
 }
 
 .lien_top {
-    margin-top: 3px;
+    width: 100%;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: row;
 
 }
 
-.top :hover {
-
-    color: #0065FC;
-    border-top: 3px solid #0065FC ;
-
-}
 
 .top {
-
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
     padding-top: 30px;
+}
+
+.top:hover {
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 10px;
+}
+
+.top a:hover {
+    border-top: none;
 }
 
 .a_hebergement {
@@ -87,7 +94,7 @@ form {
 
 .fa-location-dot {
     position: absolute;
-    border: 4px solid #F2F2F2;
+    border: 4px #F2F2F2 solid;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
     width: 60px;
@@ -97,7 +104,7 @@ form {
 
 #champs_texte {
     position: relative;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     width: 225px;
     height: 50px;
     margin-left: 50px;
@@ -106,7 +113,7 @@ form {
 
 #bouton {
     position: absolute;
-    border: 3px solid #0065FC;
+    border: 3px #0065FC solid;
     background-color: #0065FC;
     font-weight: bold;
     color: white;
@@ -151,7 +158,7 @@ form {
     width: 180px;
     height: 50px;
     margin: 0 1% 1% 1%;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 
@@ -161,8 +168,8 @@ form {
 .familial {
     width: 140px;
     height: 50px;
-    margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    margin: 0 1% 1% 1%;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 }
@@ -170,8 +177,8 @@ form {
 .romantique {
     width: 180px;
     height: 50px;
-    margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    margin: 0 1% 1% 1%;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 }
@@ -180,8 +187,8 @@ form {
 
     width: 220px;
     height: 50px;
-    margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    margin: 0 1% 1% 1%;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 
@@ -200,7 +207,7 @@ a.ensemble:hover {
 
 .fa-money-bill-wave {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -208,7 +215,7 @@ a.ensemble:hover {
 
 .fa-child-reaching {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -216,7 +223,7 @@ a.ensemble:hover {
 
 .fa-heart {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -225,7 +232,7 @@ a.ensemble:hover {
 
 .fa-dog {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -236,7 +243,7 @@ a.ensemble:hover {
 i.fa-info {
 
     display: inline-block;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     padding: 1%;
     border-radius: 30px 30px 30px 30px;
     text-align: center;
@@ -455,7 +462,7 @@ h2 .fa-star {
 /*card activity vieux port*/
 .activity_vieuport {
     background-color: #fff;
-    width: 30%;
+    width: 40%;
     height: 450px;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
@@ -482,11 +489,9 @@ h2 .fa-star {
 }
 
 .content_activity h3 {
-    font-size: 15px;
-    margin-left: 2%;
+    font-size: 12px;
+    margin-left: 3%;
 }
-
-
 
 /*card activity Fort de Pomègues/Iles de Frioul*/
 .Container_activity_fort_iles {
@@ -618,257 +623,4 @@ h2 .fa-star {
 
 .assistance h3 {
     font-size: 12px;
-}
-
-@media screen and (max-width: 992px) {
-
-    /*cards*/
-    main {
-        flex-direction: column-reverse;
-    }
-
-    .container_cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* HEBERGEMENT*/
-
-    .Container_hebergements {
-        width: 100%;
-        margin-top: 2%;
-        background-color: white;
-        padding-bottom: 2%;
-    }
-
-    /* IMG HEBERGEMENT*/
-    .card_image img {
-        height: 230px;
-    }
-
-    /* card HEBERGEMENT*/
-
-    .card {
-        width: 80%;
-
-    }
-
-    /* POPULAIRE*/
-    .Container_populaire {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .container_cards_populaire {
-        width: 80%;
-        margin: auto;
-    }
-
-    /* POPULAIRE*/
-    .card_populaire {
-        height: 200px;
-    }
-
-    /* IMG POPULAIRE*/
-    .card_image_populaire {
-        width: 40%;
-        height: 40%;
-    }
-
-    .card_image_populaire img {
-        object-fit: fill;
-        padding: none;
-        height: 200px;
-    }
-
-    /* TITRE POPULAIRE*/
-    section h2 {
-        padding-left: 10%;
-    }
-
-    .afficher_plus {
-        padding-left: 10%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /*header*/
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .lien_top {
-        width: 100%;
-    }
-
-    .lien_top li {
-        width: 50%;
-    }
-
-    .lien_top li:hover {
-        border-bottom: 3px #0065FC solid;
-        padding-bottom: 10px;
-
-    }
-
-    .lien_top a:hover {
-        border-top: none;
-    }
-
-    /*apparition et disparition elements*/
-    #bouton {
-        display: none;
-    }
-
-    #loupe {
-        display: block;
-        position: absolute;
-        border: 3px #0065FC solid;
-        padding: 14px;
-        border-radius: 10px 10px 10px 10px;
-        background-color: #0065FC;
-        color: white;
-
-    }
-
-    /*filtres*/
-    .filtre {
-        font-size: 15px;
-
-
-    }
-
-    .element {
-        flex-direction: column;
-    }
-
-    /*cartes activités*/
-
-
-    .all_cards_activity {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* dimensions CARTES*/
-
-    /*vieux port*/
-    .activity_vieuport {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin-bottom: 10%;
-
-    }
-
-    /*IMG*/
-    .image_vieuport img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    .Container_activity_fort_iles {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10%;
-    }
-
-    /*fort de Pomègues*/
-    .activity_fort_Pomegues {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-    }
-
-    /*IMG*/
-    .image_fort_Pomegues img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    /*iles de Frioul*/
-    .activity_Iles {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-    }
-
-    /*IMG*/
-    .image_Iles img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    /*parc national*/
-    .activity_parc_national {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-
-
-    }
-
-    /*IMG*/
-    .image_parc_national img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    .Container_activity_dame_parc {
-        width: 100%;
-        margin: auto;
-
-    }
-
-    /*Notre Dame de la Garde*/
-    .activity_notre_parc {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-
-    }
-
-    /*IMG*/
-    .image_notre_parc img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-
-    }
-
 }

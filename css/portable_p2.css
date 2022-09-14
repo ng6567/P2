@@ -20,33 +20,40 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+
+
 }
 
-nav img {
-    height: 40px;
-    margin-left: 30px;
+#logo {
+
+    width: 15%;
+
 }
 
 .lien_top {
-    margin-top: 3px;
+    width: 100%;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: row;
 
 }
 
-.top :hover {
-
-    color: #0065FC;
-    border-top: 3px solid #0065FC ;
-
-}
 
 .top {
-
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
     padding-top: 30px;
+}
+
+.top:hover {
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 10px;
+}
+
+.top a:hover {
+    border-top: none;
 }
 
 .a_hebergement {
@@ -87,7 +94,7 @@ form {
 
 .fa-location-dot {
     position: absolute;
-    border: 4px solid #F2F2F2;
+    border: 4px #F2F2F2 solid;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
     width: 60px;
@@ -97,41 +104,48 @@ form {
 
 #champs_texte {
     position: relative;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     width: 225px;
     height: 50px;
     margin-left: 50px;
 
 }
 
+/*apparition et disparition elements*/
 #bouton {
-    position: absolute;
-    border: 3px solid #0065FC;
-    background-color: #0065FC;
-    font-weight: bold;
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    width: 120px;
-    height: 50px;
-
+    display: none;
 }
 
 #loupe {
-    display: none;
+    display: block;
+    position: absolute;
+    border: 3px #0065FC solid;
+    padding: 14px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0065FC;
+    color: white;
+
 }
+
+
 
 /*SECTION FILTRES*/
 
 /*elements communs*/
 .filtre {
 
-    margin: auto;
+    margin: 1% 0 1% 2%;
 
+}
+
+.filtres p {
+    margin-left: 1%;
 }
 
 .element {
 
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     font-size: medium;
     margin-top: 2%;
@@ -151,7 +165,7 @@ form {
     width: 180px;
     height: 50px;
     margin: 0 1% 1% 1%;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 
@@ -162,7 +176,7 @@ form {
     width: 140px;
     height: 50px;
     margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 }
@@ -171,7 +185,7 @@ form {
     width: 180px;
     height: 50px;
     margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 }
@@ -180,8 +194,8 @@ form {
 
     width: 220px;
     height: 50px;
-    margin: 0 1% 1% 0;
-    border: 3px solid #F2F2F2;
+    margin: 0 1% 1% 1%;
+    border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
 
@@ -200,7 +214,7 @@ a.ensemble:hover {
 
 .fa-money-bill-wave {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -208,7 +222,7 @@ a.ensemble:hover {
 
 .fa-child-reaching {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -216,7 +230,7 @@ a.ensemble:hover {
 
 .fa-heart {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -225,7 +239,7 @@ a.ensemble:hover {
 
 .fa-dog {
 
-    border: 15px solid #deebff;
+    border: 15px #deebff solid;
     border-radius: 30px;
     background-color: #deebff;
     color: #0065fc;
@@ -236,7 +250,7 @@ a.ensemble:hover {
 i.fa-info {
 
     display: inline-block;
-    border: 3px solid #F2F2F2;
+    border: 3px #F2F2F2 solid;
     padding: 1%;
     border-radius: 30px 30px 30px 30px;
     text-align: center;
@@ -251,41 +265,42 @@ i.fa-info {
 /*element commun container HEBERGEMENTS POPULAIRE*/
 main {
     display: flex;
+    flex-direction: column-reverse;
 }
 
 /*elements container HEBERGEMENTS*/
 
 .Container_hebergements {
-    background-color: #F2F2F2;
-    width: 70%;
-    margin: 0 2% 0 1%;
-    border-radius: 20px;
+
+    width: 100%;
+    border: 3px solid blueviolet;
 
 }
 
 .Container_hebergements h2 {
-    padding-top: 2%;
-    padding-left: 4%;
-
+    padding: 2% 0 0 5%;
 }
 
 .container_cartes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
     margin: auto;
+    border: 3px solid red;
+
 
 }
 
 /*elements card HEBERGEMENTS*/
 .carte {
     background-color: #fff;
-    width: 30%;
+    width: 100%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
     margin-top: 4%;
+    border: 3px solid yellow;
 
 }
 
@@ -299,13 +314,18 @@ a.cartes_hebergements {
 }
 
 /*IMG card HEBERGEMENTS*/
+.carte_image {
+
+    height: 210px;
+
+}
 
 .carte_image img {
     object-fit: cover;
     width: 100%;
     padding: 2% 2% 0% 2%;
     border-radius: 20px 20px 0 0;
-    height: 120px;
+    height: 200px;
 
 }
 
@@ -315,8 +335,14 @@ a.cartes_hebergements {
 .content_cartes {
     padding: 0 0 6% 4%;
     width: 100%;
+    height: 80px;
     color: #000000;
 
+}
+
+.content_cartes h3 {
+    margin: 2% 0 2% 0;
+    font-size: 15px;
 }
 
 .content_cartes p {
@@ -324,10 +350,6 @@ a.cartes_hebergements {
     font-size: 12px;
 }
 
-.content_cartes h3 {
-    margin: 2% 0 2% 0;
-    font-size: 15px;
-}
 
 /*etoile*/
 .fa-star {
@@ -341,24 +363,25 @@ a.cartes_hebergements {
 .afficher_plus {
 
     padding-top: 6%;
-    padding-left: 5%;
+    padding-left: 6%;
 }
 
 
 /*elements container POPULAIRE*/
 .Container_populaire {
     background-color: #F2F2F2;
-    width: 30%;
+    width: 100%;
     padding-bottom: 7%;
     padding: 2%;
     border-radius: 20px;
+    border: 3px solid orangered;
 
 }
 
 .Container_populaire h2 {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 8%;
+    padding-left: 5%;
 }
 
 
@@ -368,19 +391,20 @@ h2 .fa-star {
 
 }
 
-.Container_cartes_populaire {
-    width: 80%;
+.container_cartes_populaire {
+    max-width: 90%;
     margin: auto;
+    border: 3px solid black;
 }
 
 .c_populaire {
     background-color: white;
     width: 100%;
-    height: 140px;
+    height: 200px;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 /*LIENS Populaire*/
@@ -402,8 +426,10 @@ h2 .fa-star {
 
 /*IMG card POPULAIRE*/
 .c_image_populaire {
-    width: 40%;
-    max-width: 40%;
+    width: 50%;
+    max-width: 50%;
+    height: 200px;
+    ;
 }
 
 .c_image_populaire img {
@@ -412,14 +438,14 @@ h2 .fa-star {
     max-width: 100%;
     padding: 3% 3% 3% 3%;
     border-radius: 20px 0 0 20px;
-    height: 140px;
+    height: 200px;
 
 }
 
 /*CONTENT card POPULAIRE*/
 .content_c_populaire {
-    width: 55%;
-    margin-left: 1%;
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 .content_c_populaire h3 {
@@ -432,7 +458,7 @@ h2 .fa-star {
 
 .etoile_populaire {
     color: #0065FC;
-    padding-top: 8%;
+    padding-top: 25%;
 }
 
 /*SECTION 3 container_activity*/
@@ -442,25 +468,28 @@ h2 .fa-star {
     margin: 3% 0 0 1%;
 }
 
+.Container_activity P {
+   padding-left: 5%;
+}
 /*ACTIVITES*/
 .les_cartes_activity {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: auto;
-
+    flex-direction: column;
+    align-items: center;
 
 }
 
 /*card activity vieux port*/
 .activity_vieuport {
     background-color: #fff;
-    width: 30%;
-    height: 450px;
+    width: 90%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin: 0 3% 0 0;
+    margin-bottom: 4%;
+    border: 3px solid yellow;
+
 }
 
 /*LIENS*/
@@ -477,32 +506,35 @@ h2 .fa-star {
 .image_vieuport img {
     object-fit: cover;
     width: 100%;
+    padding: 2% 2% 0% 2%;
     border-radius: 20px 20px 0 0;
-    height: 400px;
+    height: 200px;
+}
+
+.image_vieuport {
+    height: 230px;
 }
 
 .content_activity h3 {
     font-size: 15px;
-    margin-left: 2%;
+    margin-left: 3%;
 }
-
-
 
 /*card activity Fort de Pomègues/Iles de Frioul*/
 .Container_activity_fort_iles {
-    width: 30%;
-    margin: 0 3% 0 0;
+    width: 100%;
+    margin: auto;
 }
 
 /*activity Fort de Pomègues*/
 .activity_fort_Pomegues {
     background-color: #fff;
+    width: 90%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 13%;
-    width: 100%;
-    height: 250px;
+    margin: auto;
+    border: 3px solid yellow;
 
 }
 
@@ -510,69 +542,95 @@ h2 .fa-star {
 .image_fort_Pomegues img {
     object-fit: cover;
     width: 100%;
+    padding: 2% 2% 0% 2%;
     border-radius: 20px 20px 0 0;
     height: 200px;
+
+}
+
+.image_fort_Pomegues {
+    height: 230px;
 }
 
 /*activity Iles de Frioul*/
 .activity_Iles {
     background-color: #fff;
-    height: 35%;
+    width: 90%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
+    margin: 4% 0 4% 5%;
+    border: 3px solid yellow;
 
 }
 
 /*IMG*/
 .image_Iles img {
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 120px;
+    padding: 2% 2% 0% 2%;
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+}
+
+.image_Iles {
+    height: 230px;
 }
 
 /*activity Parc National des Calanques*/
 .activity_parc_national {
     background-color: #fff;
-    width: 30%;
-    height: 450px;
+    width: 90%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin: 0 4% 0 0;
+    border: 3px solid yellow;
+
 }
 
 /*IMG*/
 .image_parc_national img {
     object-fit: cover;
     width: 100%;
+    padding: 2% 2% 0% 2%;
     border-radius: 20px 20px 0 0;
-    height: 400px;
+    height: 200px;
+}
+
+.image_parc_national {
+    height: 230px;
 }
 
 /*Container carte activités Notre Dame/Parc Longchamps*/
 .Container_activity_dame_parc {
-    width: 30%;
-    margin: 0 2% 0 0;
+    width: 100%;
+    margin: auto;
+
 }
 
 /*Activités Notre Dame /Parc Longchamps*/
 .activity_notre_parc {
     background-color: #fff;
-    height: 210px;
+    width: 90%;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 13%;
+    margin: 4% 0 0 5%;
+    border: 3px solid yellow;
+
 }
 
 /*IMG*/
 .image_notre_parc img {
     object-fit: cover;
     width: 100%;
+    padding: 2% 2% 0% 2%;
     border-radius: 20px 20px 0 0;
-    height: 160px;
+    height: 200px;
+}
+
+.image_notre_parc {
+    height: 230px;
 }
 
 /*FOOTER*/
@@ -582,293 +640,41 @@ h2 .fa-star {
     width: 100%;
     margin-top: 2%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
 }
 
 /*A propos*/
 .a_propos {
-    width: 30%;
-    margin-left: 2%;
+    width: 100%;
+    margin-left: 5%;
 }
 
 .a_propos h3 {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .liens_footer {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 /*Nos hébergements*/
 .nos_hebergements {
-    width: 25%;
+    width: 100%;
+    margin-left: 5%;
 }
 
 .nos_hebergements h3 {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 /*Assistance*/
 .assistance {
-    width: 25%;
+    width: 100%;
+    margin-left: 5%;
 }
 
 .assistance h3 {
-    font-size: 12px;
-}
-
-@media screen and (max-width: 992px) {
-
-    /*cards*/
-    main {
-        flex-direction: column-reverse;
-    }
-
-    .container_cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* HEBERGEMENT*/
-
-    .Container_hebergements {
-        width: 100%;
-        margin-top: 2%;
-        background-color: white;
-        padding-bottom: 2%;
-    }
-
-    /* IMG HEBERGEMENT*/
-    .card_image img {
-        height: 230px;
-    }
-
-    /* card HEBERGEMENT*/
-
-    .card {
-        width: 80%;
-
-    }
-
-    /* POPULAIRE*/
-    .Container_populaire {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .container_cards_populaire {
-        width: 80%;
-        margin: auto;
-    }
-
-    /* POPULAIRE*/
-    .card_populaire {
-        height: 200px;
-    }
-
-    /* IMG POPULAIRE*/
-    .card_image_populaire {
-        width: 40%;
-        height: 40%;
-    }
-
-    .card_image_populaire img {
-        object-fit: fill;
-        padding: none;
-        height: 200px;
-    }
-
-    /* TITRE POPULAIRE*/
-    section h2 {
-        padding-left: 10%;
-    }
-
-    .afficher_plus {
-        padding-left: 10%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /*header*/
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .lien_top {
-        width: 100%;
-    }
-
-    .lien_top li {
-        width: 50%;
-    }
-
-    .lien_top li:hover {
-        border-bottom: 3px #0065FC solid;
-        padding-bottom: 10px;
-
-    }
-
-    .lien_top a:hover {
-        border-top: none;
-    }
-
-    /*apparition et disparition elements*/
-    #bouton {
-        display: none;
-    }
-
-    #loupe {
-        display: block;
-        position: absolute;
-        border: 3px #0065FC solid;
-        padding: 14px;
-        border-radius: 10px 10px 10px 10px;
-        background-color: #0065FC;
-        color: white;
-
-    }
-
-    /*filtres*/
-    .filtre {
-        font-size: 15px;
-
-
-    }
-
-    .element {
-        flex-direction: column;
-    }
-
-    /*cartes activités*/
-
-
-    .all_cards_activity {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* dimensions CARTES*/
-
-    /*vieux port*/
-    .activity_vieuport {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin-bottom: 10%;
-
-    }
-
-    /*IMG*/
-    .image_vieuport img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    .Container_activity_fort_iles {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10%;
-    }
-
-    /*fort de Pomègues*/
-    .activity_fort_Pomegues {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-    }
-
-    /*IMG*/
-    .image_fort_Pomegues img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    /*iles de Frioul*/
-    .activity_Iles {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-    }
-
-    /*IMG*/
-    .image_Iles img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    /*parc national*/
-    .activity_parc_national {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-
-
-    }
-
-    /*IMG*/
-    .image_parc_national img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    .Container_activity_dame_parc {
-        width: 100%;
-        margin: auto;
-
-    }
-
-    /*Notre Dame de la Garde*/
-    .activity_notre_parc {
-        background-color: #fff;
-        width: 80%;
-        height: 250px;
-        -webkit-box-shadow: 1px 3px 15px 3px #000000;
-        box-shadow: 1px 3px 15px 3px #000000;
-        border-radius: 20px;
-        margin: auto;
-        margin-bottom: 10%;
-
-    }
-
-    /*IMG*/
-    .image_notre_parc img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-
-    }
-
+    font-size: 18px;
 }
