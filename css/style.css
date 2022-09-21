@@ -30,47 +30,35 @@ nav img {
 }
 
 .lien_top {
-    margin-top: 3px;
+    
     display: flex;
-    text-align: center;
-    justify-content: center;
 
 }
 
-.top :hover {
-
+.top:hover{
+    border-top: 3px solid blue;
     color: #0065FC;
-    border-top: 3px solid #0065FC ;
-
 }
 
 .top {
 
     padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.a_hebergement {
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
-.a_activites {
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
 /*fin HEADER*/
 
 
 /*SECTION 1 : container_formulaire*/
 .Container_formulaire {
-    margin-left: 1%;
+    margin: 0 20px;
 }
 
 .Container_formulaire h1 {
-    font-size: 110%;
+    font-size: 20px;
 }
 
 .Container_formulaire p {
@@ -103,6 +91,11 @@ form {
     margin-left: 50px;
 
 }
+#champs_texte::placeholder{
+    font-weight: bold;
+    color: #000000;
+    padding-left: 10px;
+}
 
 #bouton {
     position: absolute;
@@ -123,9 +116,15 @@ form {
 /*SECTION FILTRES*/
 
 /*elements communs*/
+.filtres{
+    margin: 0 20px;
+
+}
 .filtre {
 
     margin: auto;
+    font-weight: bold;
+    
 
 }
 
@@ -135,13 +134,14 @@ form {
     box-sizing: border-box;
     font-size: medium;
     margin-top: 2%;
-
+    font-weight: bold;
 
 }
 
 .elements_filtre {
     display: flex;
     flex-wrap: wrap;
+    
     width: 100%;
 
 }
@@ -150,41 +150,43 @@ form {
 .economique {
     width: 180px;
     height: 50px;
-    margin: 0 1% 1% 1%;
     border: 3px solid #F2F2F2;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
-
+    font-weight: bold;
+    margin: 0 1%;
 
 }
 
 .familial {
     width: 140px;
     height: 50px;
-    margin: 0 1% 1% 0;
     border: 3px solid #F2F2F2;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    margin: 0 1%;
 }
 
 .romantique {
     width: 180px;
     height: 50px;
-    margin: 0 1% 1% 0;
     border: 3px solid #F2F2F2;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    margin: 0 1%;
 }
 
 .animaux_autorises {
 
     width: 220px;
     height: 50px;
-    margin: 0 1% 1% 0;
     border: 3px solid #F2F2F2;
     border-left: none;
     border-radius: 30px 30px 30px 30px;
-
+    font-weight: bold;
+    margin: 0 1%;
 
 }
 
@@ -257,8 +259,8 @@ main {
 
 .Container_hebergements {
     background-color: #F2F2F2;
-    width: 70%;
-    margin: 0 2% 0 1%;
+    width: 65%;
+    margin: 0 20px;
     border-radius: 20px;
 
 }
@@ -293,10 +295,7 @@ main {
     filter: brightness(2);
 }
 
-a.cartes_hebergements {
-    text-decoration: none;
 
-}
 
 /*IMG card HEBERGEMENTS*/
 
@@ -339,9 +338,9 @@ a.cartes_hebergements {
 }
 
 .afficher_plus {
-
     padding-top: 6%;
     padding-left: 5%;
+    font-weight: bold;
 }
 
 
@@ -349,16 +348,15 @@ a.cartes_hebergements {
 .Container_populaire {
     background-color: #F2F2F2;
     width: 30%;
-    padding-bottom: 7%;
-    padding: 2%;
     border-radius: 20px;
 
 }
 
 .Container_populaire h2 {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 8%;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    padding-top: 4%;
 }
 
 
@@ -368,19 +366,19 @@ h2 .fa-star {
 
 }
 
-.Container_cartes_populaire {
+.container_cartes_populaire {
     width: 80%;
     margin: auto;
 }
 
 .c_populaire {
     background-color: white;
-    width: 100%;
     height: 140px;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 40px;
+    
 }
 
 /*LIENS Populaire*/
@@ -439,7 +437,10 @@ h2 .fa-star {
 
 /*cards ACTIVITY*/
 .Container_activity {
-    margin: 3% 0 0 1%;
+    margin: 0 20px;
+}
+.Container_activity h2 {
+    margin-left: 20px;
 }
 
 /*ACTIVITES*/
@@ -447,7 +448,7 @@ h2 .fa-star {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: auto;
+    justify-content: center;
 
 
 }
@@ -460,14 +461,10 @@ h2 .fa-star {
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin: 0 3% 0 0;
+    margin: 0 20px;
 }
 
-/*LIENS*/
-.lien_activity {
-    text-decoration: none;
-    color: #000000;
-}
+
 
 .lien_activity:hover {
     filter: brightness(2);
@@ -478,12 +475,12 @@ h2 .fa-star {
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    height: 400px;
+    height: 390px;
 }
 
 .content_activity h3 {
     font-size: 15px;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 
@@ -491,7 +488,7 @@ h2 .fa-star {
 /*card activity Fort de Pomègues/Iles de Frioul*/
 .Container_activity_fort_iles {
     width: 30%;
-    margin: 0 3% 0 0;
+    margin: 0 20px;
 }
 
 /*activity Fort de Pomègues*/
@@ -500,7 +497,7 @@ h2 .fa-star {
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 13%;
+    margin-bottom: 10%;
     width: 100%;
     height: 250px;
 
@@ -517,7 +514,7 @@ h2 .fa-star {
 /*activity Iles de Frioul*/
 .activity_Iles {
     background-color: #fff;
-    height: 35%;
+    height: 170px;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
@@ -540,7 +537,7 @@ h2 .fa-star {
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin: 0 4% 0 0;
+    margin: 0 20px;
 }
 
 /*IMG*/
@@ -548,13 +545,13 @@ h2 .fa-star {
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    height: 400px;
+    height: 390px;
 }
 
 /*Container carte activités Notre Dame/Parc Longchamps*/
 .Container_activity_dame_parc {
     width: 30%;
-    margin: 0 2% 0 0;
+    margin: 0 20px;
 }
 
 /*Activités Notre Dame /Parc Longchamps*/
@@ -564,7 +561,7 @@ h2 .fa-star {
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 13%;
+    margin-bottom: 10%;
 }
 
 /*IMG*/
@@ -572,15 +569,18 @@ h2 .fa-star {
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    height: 160px;
+    height: 150px;
 }
+
+
 
 /*FOOTER*/
 /*container principal*/
 .Container_footer {
     background-color: #F2F2F2;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 40px;
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -589,17 +589,17 @@ h2 .fa-star {
 
 /*A propos*/
 .a_propos {
-    width: 30%;
-    margin-left: 2%;
+    width: 25%;
+    margin-left: 20px;
 }
 
 .a_propos h3 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .liens_footer {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px;
 }
 
 /*Nos hébergements*/
@@ -608,7 +608,7 @@ h2 .fa-star {
 }
 
 .nos_hebergements h3 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /*Assistance*/
@@ -617,6 +617,6 @@ h2 .fa-star {
 }
 
 .assistance h3 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
