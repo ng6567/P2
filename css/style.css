@@ -53,7 +53,7 @@ nav img {
 
 
 /*SECTION 1 : container_formulaire*/
-.Container_formulaire {
+.Container_formulaireElement1 {
     margin: 0 20px;
 }
 
@@ -78,7 +78,6 @@ form {
     border: 4px solid #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    width: 60px;
     padding: 13px;
 
 }
@@ -88,7 +87,8 @@ form {
     border: 3px solid #F2F2F2;
     width: 225px;
     height: 50px;
-    margin-left: 50px;
+    margin-left: 43px;
+    padding-left: 10px;
 
 }
 #champs_texte::placeholder{
@@ -122,16 +122,18 @@ form {
 }
 .filtre {
 
+    margin-right: 20px;
     margin: auto;
     font-weight: bold;
     
 
 }
-
+.element1{
+    padding-left : 10px;
+}
 .element {
 
     display: flex;
-    box-sizing: border-box;
     font-size: medium;
     margin-top: 2%;
     font-weight: bold;
@@ -233,19 +235,28 @@ a.ensemble:hover {
     color: #0065fc;
 }
 
-
+span .info{
+    margin-left: 10px;
+}
 /*icone info*/
 i.fa-info {
 
-    display: inline-block;
+   
     border: 3px solid #F2F2F2;
-    padding: 1%;
-    border-radius: 30px 30px 30px 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
     color: #0065FC;
 
 }
-
+.icone_logement{
+    display: flex;
+    align-items: center;
+}
 /*fin SECTION 2 filtres*/
 
 /*MAIN*/
@@ -253,6 +264,8 @@ i.fa-info {
 /*element commun container HEBERGEMENTS POPULAIRE*/
 main {
     display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
 /*elements container HEBERGEMENTS*/
@@ -260,23 +273,26 @@ main {
 .Container_hebergements {
     background-color: #F2F2F2;
     width: 65%;
-    margin: 0 20px;
     border-radius: 20px;
+    padding: 20px 25px 0 25px;
+
 
 }
 
 .Container_hebergements h2 {
-    padding-top: 2%;
-    padding-left: 4%;
+    font-size: 22px;
+    margin-bottom: 5px;
+
+    
 
 }
 
 .container_cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 95%;
-    margin: auto;
+    
 
 }
 
@@ -325,21 +341,26 @@ main {
 
 .content_cartes h3 {
     margin: 2% 0 2% 0;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /*etoile*/
-.fa-star {
-    color: #0065FC;
+.etoile_titre {
+    
+    font-size: 22px !important;
 }
+.fa-star{
+    color: #0065FC;
+    font-size: 12px;
+} 
 
 .star_grey {
     color: #F2F2F2;
+    
 }
 
 .afficher_plus {
     padding-top: 6%;
-    padding-left: 5%;
     font-weight: bold;
 }
 
@@ -347,16 +368,21 @@ main {
 /*elements container POPULAIRE*/
 .Container_populaire {
     background-color: #F2F2F2;
-    width: 30%;
+    width: 33%;
     border-radius: 20px;
+    padding: 20px 25px 0 25px;
+   
 
 }
 
 .Container_populaire h2 {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 10%;
-    padding-top: 4%;
+    justify-content: space-between;
+    font-size: 22px;
+    
+    margin-bottom: 5px;
+
+    
 }
 
 
@@ -367,17 +393,18 @@ h2 .fa-star {
 }
 
 .container_cartes_populaire {
-    width: 80%;
-    margin: auto;
+    width:  100%;
+    margin-top: 30px;
+    
 }
 
 .c_populaire {
     background-color: white;
-    height: 140px;
+    height: 130px;
     -webkit-box-shadow: 1px 3px 15px 3px #000000;
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     
 }
 
@@ -410,7 +437,7 @@ h2 .fa-star {
     max-width: 100%;
     padding: 3% 3% 3% 3%;
     border-radius: 20px 0 0 20px;
-    height: 140px;
+    height: 130px;
 
 }
 
@@ -578,9 +605,8 @@ h2 .fa-star {
 /*container principal*/
 .Container_footer {
     background-color: #F2F2F2;
-    width: 100%;
     margin-top: 40px;
-    margin-left: 20px;
+    padding-left:  20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
