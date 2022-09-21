@@ -30,12 +30,12 @@ nav img {
 }
 
 .lien_top {
-    
+
     display: flex;
 
 }
 
-.top:hover{
+.top:hover {
     border-top: 3px solid blue;
     color: #0065FC;
 }
@@ -53,7 +53,7 @@ nav img {
 
 
 /*SECTION 1 : container_formulaire*/
-.Container_formulaireElement1 {
+.Container_formulaire {
     margin: 0 20px;
 }
 
@@ -91,7 +91,8 @@ form {
     padding-left: 10px;
 
 }
-#champs_texte::placeholder{
+
+#champs_texte::placeholder {
     font-weight: bold;
     color: #000000;
     padding-left: 10px;
@@ -116,24 +117,28 @@ form {
 /*SECTION FILTRES*/
 
 /*elements communs*/
-.filtres{
+.filtres {
     margin: 0 20px;
 
 }
+
 .filtre {
 
     margin-right: 20px;
-    margin: auto;
+
     font-weight: bold;
-    
+
 
 }
-.element1{
-    padding-left : 10px;
+
+.element1 {
+    padding-left: 10px;
 }
+
 .element {
 
     display: flex;
+    align-items: center;
     font-size: medium;
     margin-top: 2%;
     font-weight: bold;
@@ -143,7 +148,7 @@ form {
 .elements_filtre {
     display: flex;
     flex-wrap: wrap;
-    
+
     width: 100%;
 
 }
@@ -235,13 +240,14 @@ a.ensemble:hover {
     color: #0065fc;
 }
 
-span .info{
+.info {
     margin-left: 10px;
 }
+
 /*icone info*/
 i.fa-info {
 
-   
+
     border: 3px solid #F2F2F2;
     display: flex;
     align-items: center;
@@ -253,10 +259,12 @@ i.fa-info {
     color: #0065FC;
 
 }
-.icone_logement{
+
+.icone_logement {
     display: flex;
     align-items: center;
 }
+
 /*fin SECTION 2 filtres*/
 
 /*MAIN*/
@@ -283,7 +291,7 @@ main {
     font-size: 22px;
     margin-bottom: 5px;
 
-    
+
 
 }
 
@@ -291,8 +299,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 95%;
-    
+   
+
 
 }
 
@@ -346,17 +354,18 @@ main {
 
 /*etoile*/
 .etoile_titre {
-    
+
     font-size: 22px !important;
 }
-.fa-star{
+
+.fa-star {
     color: #0065FC;
     font-size: 12px;
-} 
+}
 
 .star_grey {
     color: #F2F2F2;
-    
+
 }
 
 .afficher_plus {
@@ -371,18 +380,19 @@ main {
     width: 33%;
     border-radius: 20px;
     padding: 20px 25px 0 25px;
-   
+
 
 }
 
 .Container_populaire h2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 22px;
-    
+
     margin-bottom: 5px;
 
-    
+
 }
 
 
@@ -393,9 +403,9 @@ h2 .fa-star {
 }
 
 .container_cartes_populaire {
-    width:  100%;
+    width: 100%;
     margin-top: 30px;
-    
+
 }
 
 .c_populaire {
@@ -405,7 +415,7 @@ h2 .fa-star {
     box-shadow: 1px 3px 15px 3px #000000;
     border-radius: 20px;
     margin-bottom: 35px;
-    
+
 }
 
 /*LIENS Populaire*/
@@ -444,11 +454,16 @@ h2 .fa-star {
 /*CONTENT card POPULAIRE*/
 .content_c_populaire {
     width: 55%;
-    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 5px;
+
 }
 
 .content_c_populaire h3 {
     font-size: 15px;
+    margin:0;
 }
 
 .content_c_populaire p {
@@ -466,6 +481,7 @@ h2 .fa-star {
 .Container_activity {
     margin: 0 20px;
 }
+
 .Container_activity h2 {
     margin-left: 20px;
 }
@@ -606,7 +622,7 @@ h2 .fa-star {
 .Container_footer {
     background-color: #F2F2F2;
     margin-top: 40px;
-    padding-left:  20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -645,4 +661,3 @@ h2 .fa-star {
 .assistance h3 {
     font-size: 15px;
 }
-
