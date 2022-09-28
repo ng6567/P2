@@ -56,6 +56,7 @@
 
     .element {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .filtre {
@@ -69,45 +70,33 @@
     /*element commun container HEBERGEMENTS POPULAIRE*/
     main {
 
+        display: flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 0 20px;
     }
 
     /*elements container HEBERGEMENTS*/
-    .c_populaire {
-
-        width: 100%;
-        height: 200px;
-
-    }
-
     .Container_hebergements {
 
-        width: 100%;
-        margin: auto;
-        border: 3px solid blueviolet;
-
+        background-color: white;
 
     }
 
     .Container_hebergements h2 {
-        padding: 2% 0 0 5%;
+        padding: 0 1%;
     }
 
     .container_cartes {
 
         flex-direction: column;
         align-items: center;
-        border: 3px solid red;
-        width: 100%;
-
-
     }
 
-    /*elements card HEBERGEMENTS*/
     .carte {
 
         width: 100%;
-        border: 3px solid yellow;
+        height: 300px;
 
     }
 
@@ -115,21 +104,16 @@
         filter: brightness(2);
     }
 
-    /*IMG card HEBERGEMENTS*/
-    .carte_image {
-
-        height: 200px;
-
-    }
+    
 
     .carte_image img {
 
         height: 200px;
-
     }
 
     .content_cartes {
         padding: 0 0 2% 4%;
+       
     }
 
     .content_cartes h3 {
@@ -142,78 +126,79 @@
         font-size: 12px;
     }
 
+    .afficher_plus {
+        padding: 5% 1%;
+    }
+
+
     /*elements container POPULAIRE*/
     .Container_populaire {
 
         width: 100%;
-        margin: auto;
-        border: 3px solid orangered;
-
+       
     }
 
     .Container_populaire h2 {
-        padding: 0 5% 0 5%;
-        justify-content: space-between;
+        padding: 0 1%;
     }
 
 
 
     .container_cartes_populaire {
-        max-width: 100%;
 
-        border: 3px solid black;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+
     }
 
-    .c_principal {
-        flex-wrap: nowrap;
+    .c_populaire {
+
+        width: 100%;
+        flex-direction: column;
+        height: 170px;
+     
     }
 
     /*IMG card POPULAIRE*/
-    .c_image_populaire {
-        width: 50%;
-        max-width: 50%;
-        height: 200px;
-
-    }
+   
 
     .c_image_populaire img {
-
-        height: 200px;
-
+        height: 170px;
     }
+
 
     /*CONTENT card POPULAIRE*/
-    .content_c_populaire {
-        width: 50%;
-        margin-bottom: 20px;
-    }
+    
 
     .content_c_populaire p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .etoile_populaire {
         color: #0065FC;
-        padding-top: 25%;
+        padding-top: 20%;
+        padding-bottom: 5%;
     }
+
+
+
 
     /*SECTION 3 container_activity*/
     .Container_activity {
-        margin: auto;
-        border: 3px solid green;
-    }
+        padding: 25px 25px;
+        background-color: white;
+            }
 
     .Container_activity h2 {
-        padding-bottom: 3%;
+        padding: 0 1%;
+        margin: 20px 0;
     }
 
     /*ACTIVITES*/
-    .les_cartes_activity {
-        width: 90%;
-        flex-direction: column;
-        margin: auto;
-        border: 3px solid indianred;
-    }
+   
 
     .les_cartes_activity h3 {
         padding-left: 1%;
@@ -224,13 +209,13 @@
 
         width: 100%;
         height: 300px;
-        margin: auto;
-        border: 3px solid black;
+        margin:0 0 20px 0;
+        
     }
 
     /*img vieux port*/
     .image_vieuport img {
-        height: 220px;
+        height: 230px;
     }
 
     /*CONTENT vieux port*/
@@ -242,41 +227,46 @@
     .Container_activity_fort_iles {
         width: 100%;
         margin: auto;
-        border: 3px solid blue;
+        
     }
 
     /*activity Fort de Pomègues*/
     .activity_fort_Pomegues {
 
         height: 300px;
-        margin: 4% 0 4% 0;
-        
+        margin: auto;
+        margin-bottom: 4%;
+        width: 100%;
+
 
     }
 
     .activity_Iles {
         height: 300px;
-        margin: 0 0 4% 0;
+        margin: auto;
+        margin-bottom: 4%;
+        width: 100%;
     }
 
     .image_Iles img {
-        height: 220px;
+        height: 230px;
     }
 
     .image_fort_Pomegues img {
-        height: 220px;
+        height: 230px;
     }
 
     /*activity Parc National des Calanques*/
     .activity_parc_national {
-        width: 100%;
         height: 300px;
         margin: auto;
+        width: 100%;
+        
     }
 
     /*IMG*/
     .image_parc_national img {
-        height: 220px;
+        height: 230px;
     }
 
     /*Container carte activités Notre Dame/Parc Longchamps*/
@@ -286,21 +276,24 @@
     }
 
     /*Activités Notre Dame /Parc Longchamps*/
-    .activity_notre_parc{
-        border: 3px solid red;
+    .activity_notre_parc {
+        
         width: 100%;
         height: 300px;
+        margin: auto;
         margin-bottom: 4%;
     }
-    .image_notre_parc img{
-        height: 220px;
+
+    .image_notre_parc img {
+        height: 230px;
     }
+
     /*FOOTER*/
     /*container principal*/
     .Container_footer {
         background-color: #F2F2F2;
         width: 100%;
-        margin-top: 2%;
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
 
@@ -309,7 +302,8 @@
     /*A propos*/
     .a_propos {
         width: 100%;
-        margin-left: 5%;
+        padding-left: 4%;
+
     }
 
     .a_propos h3 {
@@ -324,7 +318,8 @@
     /*Nos hébergements*/
     .nos_hebergements {
         width: 100%;
-        margin-left: 5%;
+        padding-left: 4%;
+
     }
 
     .nos_hebergements h3 {
@@ -334,7 +329,8 @@
     /*Assistance*/
     .assistance {
         width: 100%;
-        margin-left: 5%;
+        padding-left: 4%;
+
     }
 
     .assistance h3 {

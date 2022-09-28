@@ -1,7 +1,53 @@
 @media screen and (max-width:992px) {
 
-    .container_cartes_populaire{
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Container_hebergements {
         width: 100%;
     }
-  
-}
+    .container_cartes_populaire {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+       
+    }
+    
+    .Container_populaire {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .c_populaire {
+        width: 40%;
+        display:flex;
+        margin-left: 2%;
+    }
+    .Container_activity{
+        background-color: #F2F2F2;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .les_cartes_activity {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .Container_activity_fort_iles {
+        margin: 20px 20px;
+    }
+    .activity_fort_Pomegues {
+        height: 210px;
+        
+    }
+    .image_fort_Pomegues img {
+        height: 150px;
+    }
+    .activity_Iles {
+        height: 210px;
+    }
+    .image_Iles img {
+        height: 150px;
+    }
+}   
