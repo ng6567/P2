@@ -13,7 +13,7 @@
 body {
     margin: auto;
     max-width: 1500px;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 /*HEADER*/
@@ -275,7 +275,9 @@ main {
     justify-content: space-between;
     margin: 0 20px;
 }
-
+span{
+    font-weight: bold;
+}
 /*elements container HEBERGEMENTS*/
 
 .Container_hebergements {
